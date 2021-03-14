@@ -1,40 +1,6 @@
 ﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
-
-
-
-/* Custom_CSS */
-
-.cbutton {
-    background-color: #3B3230;
-    border: none;
-    color: white;
-    padding: 40px 60px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-}
-
-video {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -100;
-    background-size: cover;
-    transition: 1s opacity;
-}
-
-
-/* Custom_CSS */
-
-
+  
 a.navbar-brand {
   white-space: normal;
   text-align: center;
