@@ -3,26 +3,95 @@
 }
 
 <div class="section">
-     
-    <div class="grid-item">
-         <div>
-             <img src="~/Images/skull.png"/>
-         </div>
-        <div class="btn-group">
-            <h2>Do you want to hack fbr</h2>
-            <div class="btn-group">
-                <button>Yes</button>
-                <button>No</button>
-            </div>
-        </div>
+
+    <div class="item">
+
+        <img src="~/Images/skull.png" class="center" />
+
+        <h2>Do you want to hack fbr</h2>
+        <table class="btnContainer">
+            <tr>
+
+                <td>
+                    <button>Yes</button>
+                </td>
+                <td>
+                    <button>No</button>
+                </td>
+            </tr>
+        </table>
+
+
     </div>
     <div class="video-container">
-        @*<div class="color-overlay"></div>*@
         <video autoplay loop muted>
             <source src="~/Videos/video.mp4" type="video/mp4">
         </video>
     </div>
 
-</div> 
- 
+</div>
+
+<style>
+    .btnContainer {
+        margin: auto;
+        width: 50%;
+        padding: 10px;
+        opacity: 0.5;
+        background-color: inherit;
+    }
+
+        .btnContainer button {
+            border-radius: 5px;
+            padding-inline: 30px 30px;
+            background-color: inherit;
+            color: white;
+            padding-inline: 30px 30px;
+            padding-block: 10px 10px;
+            min-width: 100px;
+            margin: 10px; 
+        }
+
+    .item {
+        background-color: #000000;
+        border: 5px solid rgba(0, 0, 0, 0.8);
+        padding: 60px;
+        opacity: 0.9;
+    }
+
+        .item h2 {
+            margin-left: 17px;
+        }
+
+    .section {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        color: white;
+    }
+
+    .video-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    video {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        background-size: cover;
+        transition: 1s opacity;
+        z-index: -100;
+    }
+</style>
+
 

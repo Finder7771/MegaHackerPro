@@ -2,12 +2,11 @@
     background-color: #3B3230;
     border: none;
     color: white;
-    padding: 40px 60px;
+    padding: 10px 30px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
     cursor: pointer;
 }
 
@@ -64,22 +63,26 @@ video {
 
 .grid-container {
     display: grid;
-    grid-template-columns: auto auto auto;
-    background-color: #2196F3;
-    padding: 10px;
+    grid-template-columns: auto auto;
+    column-gap: 5px;
+    background-color: #999999;
+    position: absolute;
+    margin-right: 100px;
 }
 
 .grid-item {
     background-color: #000000;
     border: 1px solid rgba(0, 0, 0, 0.8);
-    padding: 50px; 
-    opacity: 0.7;
+    padding: 60px;
+    opacity: 0.9;
 }
 
-.titlex {
-    background: red;
-    position: absolute;
-    opacity: 1;
+    .grid-item h2 {
+        color: red;
+    }
+
+#queue {
+    color: red;
 }
 
 .btn-group a {
@@ -87,21 +90,18 @@ video {
     border: 1px solid green; /* Green border */
     color: white; /* White text */
     padding: 10px 24px; /* Some padding */
-    cursor: pointer; /* Pointer/hand icon */ 
+    cursor: pointer; /* Pointer/hand icon */
     display: block; /* Make the buttons appear below each other */
 }
+
 .btn-group button {
     margin: 0;
-    background-color: transparent; /* Green background */
-    border: 1px solid green; /* Green border */
     color: white; /* White text */
     padding: 10px 24px; /* Some padding */
     cursor: pointer; /* Pointer/hand icon */
-     
-    top: 50%;
-    left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     border-radius: 25%;
+    display: inline-block;
+    text-align: center;
 }
-
